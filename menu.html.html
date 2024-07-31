@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenedores de Panadería</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+    }
+    .box {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+      transition: transform 0.3s;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+    }
+    .icon {
+      font-size: 50px;
+      color: #e67e22;
+    }
+    h3 {
+      color: #333;
+      margin: 10px 0;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <i class="fas fa-birthday-cake icon"></i>
+      <h3>Pastelería</h3>
+      <p>Deliciosos pasteles para cada ocasión.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-bread-slice icon"></i>
+      <h3>Panadería</h3>
+      <p>Pan fresco y crujiente todos los días.</p>
+    </div>
+    <div class="box">
+      <i class="fas fa-cookie icon"></i>
+      <h3>Repostería</h3>
+      <p>Galletas y dulces irresistibles.</p>
+    </div>
+  </div>
+</body>
+</html>
