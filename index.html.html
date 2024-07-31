@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panadería La Espiga Dorada</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Estilos CSS para dar formato a la página */
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f8f8f8;
@@ -61,21 +61,36 @@
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    section h2 {
+    .container {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      margin: auto;
+      flex-wrap: wrap; /* Permite que los contenedores se ajusten en pantallas más pequeñas */
+    }
+    .box {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+      margin: 20px; /* Espaciado entre los contenedores */
+      transition: transform 0.3s;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+    }
+    .icon {
+      font-size: 50px;
       color: #e67e22;
     }
-    .button {
-      display: inline-block;
-      background-color: #e67e22;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-      margin-top: 10px;
+    h3 {
+      color: #333;
+      margin: 10px 0;
     }
-    .button:hover {
-      background-color: #d35400;
+    p {
+      color: #666;
     }
     footer {
       background-color: #333;
@@ -112,14 +127,23 @@
     
     <section>
       <h2>Nuestros Productos</h2>
-      <ul>
-        <li>🍞 Pan de molde</li>
-        <li>🥐 Croissants</li>
-        <li>🧁 Magdalenas</li>
-        <li>🍪 Galletas</li>
-        <li>🥖 Baguettes</li>
-        <li>🎂 Pasteles personalizados</li>
-      </ul>
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-birthday-cake icon"></i>
+          <h3>Pastelería</h3>
+          <p>Deliciosos pasteles para cada ocasión.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-bread-slice icon"></i>
+          <h3>Panadería</h3>
+          <p>Pan fresco y crujiente todos los días.</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-cookie icon"></i>
+          <h3>Repostería</h3>
+          <p>Galletas y dulces irresistibles.</p>
+        </div>
+      </div>
     </section>
     
     <section>
